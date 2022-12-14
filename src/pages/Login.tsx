@@ -1,8 +1,12 @@
-import { useKeycloak } from "@react-keycloak/web";
-import React, { useCallback } from "react";
+import { useKeycloak } from '@react-keycloak/web';
+import React, { useCallback } from 'react';
 
 const LandingPage = (): JSX.Element => {
-  const { keycloak } = useKeycloak();
+  const { keycloak, initialized } = useKeycloak();
+
+  if (!initialized) {
+    console.log('Keycloak no iniciado');
+  }
 
   const keycloakLogin = useCallback(() => {
     keycloak.login({ redirectUri: process.env.REACT_APP_BASE_URL });
