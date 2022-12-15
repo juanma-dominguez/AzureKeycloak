@@ -20,7 +20,7 @@ You will also see any lint errors in the console.
 
 ## Azure Active Directory
 
-Create an App registrations in Azure Active Directory. We must create a secret and configure the keycloak identity provider with this data.
+Create an App registrations in Azure Active Directory. We must create a secret and configure the keycloak identity provider with this data. We must add the redirect uri from keycloak idp to the azure App.
 
 ## Keycloak clients
 
