@@ -16,7 +16,7 @@ export const App = () => {
   const keycloakLogin = useCallback(() => {
     keycloak.login({
       redirectUri: process.env.REACT_APP_BASE_URL,
-      //idpHint: 'one-beyond',
+      //idpHint: 'oidc',
     });
   }, [keycloak]);
 
@@ -49,7 +49,7 @@ export const App = () => {
             <h1 className='responsive-headline'>Ktuin</h1>
           </div>
           <div>
-            <h3>Best ecommerce ever</h3>
+            <h3>Best Deals for One Beyond</h3>
           </div>
           <hr />
 
