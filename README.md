@@ -1,3 +1,7 @@
+## Architecture diagram
+
+![alt text](https://github.com/juanma-dominguez/AzureKeycloak/blob/main/docs/arch.png?raw=true)
+
 # Getting Started
 
 Run Keycloak in local: `docker run --name keycloak_dev -p 8080:8080 -e KEYCLOAK_ADMIN=admin -e KEYCLOAK_ADMIN_PASSWORD=admin -e KEYCLOAK_FRONTEND_URL=http://localhost quay.io/keycloak/keycloak:latest start-dev`
@@ -21,7 +25,3 @@ Create an App registrations in Azure Active Directory. We must create a secret a
 ## Keycloak clients
 
 Create a client in keycloak and add this data to .env.local file to connect the react app.
-
-## Architecture diagram
-
-![alt text](https://github.com/juanma-dominguez/AzureKeycloak/blob/main/docs/arch.png?raw=true)
